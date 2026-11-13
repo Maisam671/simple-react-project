@@ -1,0 +1,108 @@
+
+/* Main page */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Content card */
+.card {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  padding: 60px 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  animation: appear 0.8s ease;
+}
+
+/* Small label */
+.tag {
+  display: inline-block;
+  background: #eeeaff;
+  color: #764ba2;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.card h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #252b42;
+  margin-bottom: 18px;
+}
+
+/* Paragraph */
+.card p {
+  color: #777d91;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Back button */
+.btn-back {
+  background: #252b42;
+  box-shadow: none;
+}
+
+.btn-back:hover {
+  background: #414967;
+}
+
+/* Animation */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .card {
+    padding: 40px 22px;
+  }
+
+  .card h1 {
+    font-size: 28px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
